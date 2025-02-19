@@ -11,12 +11,13 @@ with open('path/to/doc1.txt', 'r') as f1, open('path/to/doc2.txt', 'r') as f2:
     doc1 = f1.read()
     doc2 = f2.read()
 
+# Read documents from local text files
 collection.add(
     documents=[doc1,doc2],
     metadatas=[
         {"source": "doc1.txt"},
         {"source": "doc2.txt"} 
-    ],
+    ], 
     ids=["doc1","doc2"],
 )
 
